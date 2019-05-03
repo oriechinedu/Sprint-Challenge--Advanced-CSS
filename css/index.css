@@ -172,7 +172,17 @@ p {
 .nav-container {
   width: 900px;
   background-color: #F6F6F6;
+  top: 0;
+  position: fixed;
+  opacity: 0.9;
+  left: calc((100vw - 900px) / 2);
+  z-index: -1;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    left: 0;
+  }
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -242,6 +252,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 8rem;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 9.5rem;
+  }
 }
 .home .intro {
   margin: 0 auto;
