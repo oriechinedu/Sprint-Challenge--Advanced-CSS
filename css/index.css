@@ -254,7 +254,7 @@ footer {
   align-items: center;
 }
 .home {
-  margin-top: 8rem;
+  margin-top: 8.5rem;
 }
 @media (max-width: 500px) {
   .home {
