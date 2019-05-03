@@ -160,6 +160,61 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+  }
+}
+.nav-container .navigation {
+  width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .nav-container .navigation {
+    width: 100%;
+  }
+}
+.nav-container .navigation .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-container .navigation .navbar > .nav-link {
+  text-decoration: none;
+  color: #454A59;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-container .navigation .logo {
+  margin-bottom: 1rem;
+}
+.nav-container .navigation .logo > a {
+  font-size: 4rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: #454A59;
+  font-family: 'Russo One', sans-serif;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;

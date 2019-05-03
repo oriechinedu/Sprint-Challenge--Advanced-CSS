@@ -1,1 +1,13 @@
 // Mixins Here
+.mobile-width() {
+  @media @mobile {
+    width: 100%;
+  }
+}
+.display-flex(@flexDirection, @justifyContent, @alignItems) {
+  display        : flex;
+  flex-direction : @flexDirection;
+  justify-content: @justifyContent;
+  align-items    : @alignItems;
+  flex-wrap      : wrap;
+}
