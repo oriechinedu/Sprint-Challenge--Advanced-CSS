@@ -3,6 +3,15 @@
 .nav-container {
   width  : @desktopWidth + 100;
   background-color: @nav-bg;
+  top: 0;
+  position: fixed;
+  opacity: 0.9;
+  left: calc((100vw - 900px) / 2);
+  @media @phone {
+    left: 0;
+    
+  }
+  z-index: -1;
   .mobile-width();
   margin : 0 auto;
   @media @phone {
