@@ -174,9 +174,8 @@ p {
   background-color: #F6F6F6;
   top: 0;
   position: fixed;
-  opacity: 0.9;
   left: calc((100vw - 900px) / 2);
-  z-index: -1;
+  z-index: 500;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -227,6 +226,12 @@ p {
   padding: 0 2rem;
   font-size: 1.5rem;
   font-weight: bold;
+  transition: 0.5s ease-in-out;
+}
+.nav-container .navigation .navbar > .nav-link:hover {
+  color: #3775A9;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
 }
 @media (max-width: 500px) {
   .nav-container .navigation .navbar > .nav-link {
@@ -242,6 +247,11 @@ p {
   font-weight: bold;
   color: #23293B;
   font-family: 'Russo One', sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.nav-container .navigation .logo > a:hover {
+  color: #3775A9;
+  transition: 0.5s ease-in-out;
 }
 footer {
   color: #22283B;
@@ -287,6 +297,11 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.home .space-images img:hover {
+  transform: scale(1.1, 1);
+  transition: 0.5s ease-in-out;
 }
 @media (max-width: 500px) {
   .home .space-images img {
@@ -379,4 +394,63 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.home .walk .walk-img img:hover {
+  transform: scale(1.1, 1);
+  transition: 0.5s ease-in-out;
+}
+.home .sign-up {
+  width: 100%;
+  margin: 2rem auto;
+}
+.home .sign-up .form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .home .sign-up .form-container {
+    width: 90%;
+  }
+}
+.home .sign-up .form-container fieldset {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 2rem;
+}
+.home .sign-up .form-container fieldset legend {
+  font-size: 2rem;
+}
+.home .sign-up .form-container fieldset .form-control {
+  outline: none;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.home .sign-up .form-container fieldset .form-control:not(button) {
+  border: 1px solid #dee2e6;
+}
+.home .sign-up .form-container fieldset .form-control.btn {
+  width: max-content;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  background-color: #22283A;
+  color: #F1F1F1;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  width: 100%;
+}
+.home .sign-up .form-container fieldset .form-control.btn:hover {
+  background-color: #3775A9;
+  color: #F6F7F8;
+  transition: 0.5s ease-in-out;
+}
+.home .sign-up .form-container fieldset .row {
+  display: flex;
+  flex-direction: column;
 }
