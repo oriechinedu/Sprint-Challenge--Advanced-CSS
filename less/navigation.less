@@ -1,18 +1,19 @@
 // Navigation code here
 
 .nav-container {
-  width  : 900px;
+  width  : @desktopWidth + 100;
+  background-color: @nav-bg;
+  .mobile-width();
   margin : 0 auto;
-  @media @mobile {
+  @media @phone {
     padding-bottom: 1rem;
   }
   .mobile-width();
   .navigation {
-    width: @desktopWidth + 100;
+    width: @desktopWidth;
     .mobile-width();
     margin: 0 auto;
     padding: 1rem 0;
-    background-color: @nav-bg;
     .display-flex(column, center, center);
     .navbar {
       .display-flex(row, center, center);
@@ -22,7 +23,9 @@
         padding        : 0 2rem;
         font-size      : 1.5rem;
         font-weight    : bold;
-
+        @media @phone {
+          padding: 0 0.8rem;
+        }
       }
     }
     .logo {
