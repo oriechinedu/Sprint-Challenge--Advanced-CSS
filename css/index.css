@@ -126,11 +126,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-}
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 html,
 body {
@@ -163,7 +166,6 @@ p {
 .nav-container {
   width: 900px;
   margin: 0 auto;
-  padding: 0.8rem 0;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -224,6 +226,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin: 0 auto;
 }
 .home .intro h2 {
   padding: 15px;
