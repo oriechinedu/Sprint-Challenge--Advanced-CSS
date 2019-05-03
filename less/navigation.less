@@ -1,50 +1,68 @@
 // Navigation code here
 
 .nav-container {
-  width  : @desktopWidth + 100;
+  width           : @desktopWidth + 100;
   background-color: @nav-bg;
-  top: 0;
-  position: fixed;
-  opacity: 0.9;
-  left: calc((100vw - 900px) / 2);
+  top             : 0;
+  position        : fixed;
+  left            : calc((100vw - 900px) / 2);
+
   @media @phone {
     left: 0;
-    
   }
-  z-index: -1;
+
+  z-index: 500;
   .mobile-width();
   margin : 0 auto;
+
   @media @phone {
     padding-bottom: 1rem;
   }
+
   .mobile-width();
+
   .navigation {
     width: @desktopWidth;
     .mobile-width();
-    margin: 0 auto;
+    margin : 0 auto;
     padding: 1rem 0;
     .display-flex(column, center, center);
+
     .navbar {
       .display-flex(row, center, center);
+
       >.nav-link {
         text-decoration: none;
         color          : @nav-font;
         padding        : 0 2rem;
         font-size      : 1.5rem;
         font-weight    : bold;
+        transition: .5s ease-in-out;
+        &:hover {
+          color     : @btn-hover-bg-color;
+          transition: .5s ease-in-out;
+          transform: scale(1.2);
+        }
         @media @phone {
           padding: 0 0.8rem;
         }
       }
     }
+
     .logo {
       margin-bottom: 1rem;
+
       >a {
         font-size      : 4rem;
         text-decoration: none;
         font-weight    : bold;
         color          : @header-font-color;
         font-family    : @title-font;
+        transition: .5s ease-in-out;
+        &:hover {
+          color     : @btn-hover-bg-color;
+          transition: .5s ease-in-out;
+        }
       }
 
     }
