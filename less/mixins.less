@@ -1,1 +1,34 @@
 // Mixins Here
+.mobile-width() {
+  @media @phone {
+    width: 100%;
+  }
+}
+
+.display-flex(@flexDirection, @justifyContent, @alignItems) {
+  display        : flex;
+  flex-direction : @flexDirection;
+  justify-content: @justifyContent;
+  align-items    : @alignItems;
+  flex-wrap      : wrap;
+}
+
+.create-sign-up-btn(@bgColor, @textColor) {
+  width           : max-content;
+  border-radius   : 4px;
+  padding         : 1rem 2rem;
+  background-color: @bgColor;
+  color           : @textColor;
+  font-size       : 2rem;
+  font-weight     : bold;
+  opacity         : 0.9;
+  cursor          : pointer;
+  transition: .5s ease-in-out;
+
+}
+
+.btn-hover-effect(@bgColor, @textColor) {
+  background-color: @bgColor;
+  color           : @textColor;
+  transition: .5s ease-in-out;
+}

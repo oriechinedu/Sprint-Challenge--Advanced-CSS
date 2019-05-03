@@ -1,35 +1,51 @@
 // Home Content
 
 .home {
-
+  margin-top: 8.5rem;
+  @media @phone {
+    margin-top: 9.5rem;
+    
+  }
   .intro {
+    margin: 0 auto;
 
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+    .header-image {
+      max-width: 100%;
+      object-fit: cover;
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .space-images {
-    display: flex;
+    display  : flex;
     flex-wrap: wrap;
-    width: 100%;
+    width    : 100%;
 
     img {
-      width: 28%;
-      margin: 20px 2.5%;
+      width        : 28%;
+      margin       : 20px 2.5%;
       border-radius: 20px;
-      height: 100%;
+      height       : 100%;
+      @media @phone {
+        width: 100%;
+        &:not(:first-of-type) {
+          display: none;
+        }
+      }
     }
   }
 
   .visit-planets {
     padding: 15px;
-
     h3 {
       margin-top: 11px;
     }
@@ -40,15 +56,25 @@
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    margin-top     : 60px;
+    @media @phone {
+      margin-top: 0.8rem;
+    }
+    border-top     : 1px solid @main-border-color;
+    padding        : 50px 60px;
 
+    display        : flex;
+    justify-content: center;
+    @media @phone {
+      .display-flex(column-reverse, center, center);
+      padding: 1rem;
+    }
     .walk-text {
       width: 50%;
-
+      @media @phone {
+        width:100%;
+        margin: 1rem auto;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -56,20 +82,31 @@
       p {
         margin-bottom: 26px;
       }
-
       .btn {
+        .create-sign-up-btn(@btn-bg-color, @sea-shell);
+        &:hover {
+          .btn-hover-effect(@btn-hover-bg-color, @porcelain)
+        }
+        @media @phone {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
-
     .walk-img {
-      width: 46%;
+      width      : 46%;
       margin-left: 4%;
-      
+      @media @phone {
+        width:100%;
+        margin: 0 auto;
+      }
       img {
-        width: 100%;
-        height: auto;
+        width        : 100%;
+        height       : auto;
         border-radius: 10px;
       }
     }
   }
-}// home
+}
+
+// home
