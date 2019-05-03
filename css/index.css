@@ -282,9 +282,11 @@ footer {
   font-weight: bold;
   opacity: 0.9;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 .home .walk .walk-text .btn:hover {
-  opacity: 1;
+  background-color: #3775A9;
+  color: #F6F7F8;
   transition: 0.5s ease-in-out;
 }
 .home .walk .walk-img {

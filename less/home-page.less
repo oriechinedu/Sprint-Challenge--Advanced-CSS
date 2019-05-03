@@ -58,10 +58,9 @@
         margin-bottom: 26px;
       }
       .btn {
-        .create-sign-up-btn(@btn-bg-color);
+        .create-sign-up-btn(@btn-bg-color, @sea-shell);
         &:hover {
-          opacity   : 1;
-          transition: .5s ease-in-out;
+          .btn-hover-effect(@btn-hover-bg-color, @porcelain)
         }
       }
     }
