@@ -4,10 +4,24 @@
     width: 100%;
   }
 }
+
 .display-flex(@flexDirection, @justifyContent, @alignItems) {
   display        : flex;
   flex-direction : @flexDirection;
   justify-content: @justifyContent;
   align-items    : @alignItems;
   flex-wrap      : wrap;
+}
+
+.create-sign-up-btn(@bgColor) {
+  width           : max-content;
+  border-radius   : 4px;
+  padding         : 1rem 2rem;
+  background-color: @bgColor;
+  color           : @sea-shell;
+  font-size       : 2rem;
+  font-weight     : bold;
+  opacity         : 0.9;
+  cursor          : pointer;
+
 }

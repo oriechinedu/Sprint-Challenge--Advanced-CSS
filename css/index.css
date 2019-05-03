@@ -214,7 +214,7 @@ p {
   font-size: 4rem;
   text-decoration: none;
   font-weight: bold;
-  color: #454A59;
+  color: #23293B;
   font-family: 'Russo One', sans-serif;
 }
 footer {
@@ -271,6 +271,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: max-content;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  background-color: #22283A;
+  color: #F1F1F1;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
 }
 .home .walk .walk-img {
   width: 46%;
